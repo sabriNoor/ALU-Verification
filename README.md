@@ -1,6 +1,11 @@
 # 4-bit ALU Verification Testbench
 
-A comprehensive SystemVerilog testbench for verifying a 4-bit Arithmetic Logic Unit (ALU) using UVM-like methodology.
+A professional SystemVerilog testbench for verifying a 4-bit Arithmetic Logic Unit (ALU) using UVM-like methodology with comprehensive functional coverage.
+---
+
+## Project Overview
+
+This project implements a complete verification environment for a 4-bit ALU with 8 operations. The testbench follows industry-standard UVM-like architecture with constrained random testing, automatic scoreboard checking, and functional coverage.
 
 ---
 
@@ -11,6 +16,10 @@ A comprehensive SystemVerilog testbench for verifying a 4-bit Arithmetic Logic U
 - Automatic scoreboard checking
 - Clock-based synchronization
 - Professional code structure with packages and interfaces
+- Comprehensive functional coverage tracking:
+    - Operation coverage (all 8 ALU operations)
+    - Reset scenario coverage (active/inactive states)
+    - Input value coverage (for both operands)
 
 ---
 
@@ -29,9 +38,12 @@ alu-verification/
 │ ├── driver.sv # Driver/BFM
 │ ├── monitor.sv # Response monitor
 │ ├── scoreboard.sv # Checker
+│ ├── coverage.sv # Functional coverage
 │ ├── environment.sv # Test environment
 │ ├── test.sv # Test class
 │ └── top.sv # Top module
+|
+
 
 ```
 ---
@@ -58,5 +70,6 @@ alu-verification/
 - Monitor: Captures DUT responses
 - Scoreboard: Compares expected vs actual results
 - Environment: Orchestrates all components
+- Coverage: Tracks functional coverage metrics
 
 ---

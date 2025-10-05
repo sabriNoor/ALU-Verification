@@ -1,0 +1,24 @@
+# Simulation files
+xcelium.d/
+*.log
+*.key
+*.vcd
+*.fsdb
+*.shm
+*.trn
+*.dsn
+*.vpd
+
+# Editor files
+*.swp
+*~
+.*.swp
+.*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
